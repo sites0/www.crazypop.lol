@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sign Up / Sign In</title>
+</head>
+<body>
+  <header>
+   
+  </header>
+  <video autoplay loop muted id="background-video">
+    <source src="y.mp4" type="video/mp4">
+  </video>
+  <div class="container">
+   <br><br><br>
+    <h1>Register / Sign In</h1>
+    <div class="tabs">
+    <button class="tab-button" data-target="#sign-up">&nbsp;&nbsp;Sign Up&nbsp;&nbsp;</button>
+      <button class="tab-button" data-target="#sign-in">&nbsp;&nbsp;Sign In&nbsp;&nbsp;</button>
+    </div>
+    <div id="sign-up" class="tab-content">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+    <div id="sign-in" class="tab-content">
+      <h4>Email:</h4>
+    <input placeholder="Email"class="search-bar">
+    <br>
+    <h4>Password:</h4>
+   <input  placeholder="password"class="search-bar">
+    <a href="bio-link.html">
+      <br><br><br>
+      <button class="button">Login</button>
+    </a>
+    </div>
+    
+  <script src="scripts.js"></script>
+</body>
+</html>
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+.search-bar {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  
+}
+body {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: white;
+}
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #07a727a6;
+  padding: 30px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 500px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+button{
+  color: white;
+  border-radius: 80px;
+  border: 20px white;
+  font-size: 20px;
+  background-color: #45a049;
+
+}
+.tab-button {
+  background-color: rgb(3, 60, 3);
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.tab-button:focus {
+  outline: none;
+}
+
+.tab-button:hover {
+  background-color: #f2f2f2;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+butto[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+butto[type="submit"]:hover {
+  background-color: #45a049;
+}
+</style>
+<script>
+    const tabButtons = document.querySelectorAll('.tab-button');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    tabButtons.forEach((button) => button.classList.remove('active'));
+    button.classList.add('active');
+
+    tabContents.forEach((content) => {
+      content.classList.remove('active');
+    });
+
+    const target = document.querySelector(button.dataset.target);
+    target.classList.add('active');
+  });
+});
+</script>
