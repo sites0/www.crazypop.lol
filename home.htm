@@ -1,32 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="home.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Linear Gradient Background</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <nav class="nav-bar">
-		<a href="login-link.htm">SignUp</a>
-		<a href="bio-link.html">bio-links</a>
-		<a href="hhh.htm">About</a>
-	</nav>
-    <hr>
-    <section>
+  <header>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path fill="currentColor"d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"/></svg></a></li>
+            <li><a href="bio-link.html">Biolinks</a></li>
+            <li><a href="login-link.htm">Sign Up</a></li>
+            <li><a href="hhh.htm">about us</a></li>
+            <li><a href="g.htm">Tic Tac toe game</a></li>
+        </ul>
+        
+        <ul>
+            <li class="hideOnMobile"><img src="Packaging_Business_Instagram_Profile_Picture_in_Bright_Red_Black_Bold_Style_.jpg" height="100" width="100">
+            </li>
+            <li class="hideOnMobile" ><br><h1 class="ik"></h1></li>
+            <li class="hideOnMobile"><a href="projects.htm"></a></li>
+            <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24"><path  fill="currentColor"d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path></svg></a></li>
+        </ul>
+            </nav>
+</header>
+  <video autoplay loop muted id="background-video">
+    <source src="vecteezy_liquid-gradient-background-with-fluid-motion_7964227.mp4" type="video/mp4">
+  </video>
+
+    <h1 class="pop">𝘾𝙧𝙖𝙯𝙮𝙋𝙊𝙋</h1>
+    <br>
+  <br> <h1 class="io">
+    to the future of bios and<br> that is customizeable
+     </h1>
     
-        <header>
-        <div class="jojo">
-           <br><br> <h1 class="hi"> welcome to Crazy </h1><h1 class="hi1">pop website</h1> 
-           <a href="login-link.htm">
-           <button class="btn">Sign up</button>
-           </a>
-           <br><br><br><br><br>
-        
-        </div>
-        
-        </header>
-        
-    </section>
+     
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="#"><button class="button">Bio links</button>
+      </a>
+    </h1>
+    
+    <br><br><br><p>3D animation</p><h1 class="po">&nbsp;&nbsp;&nbsp;unleashing immersive <br>&nbsp;&nbsp;experience:3D elevate your brand<br>&nbsp;&nbsp;with custom 3D modeling</h1>
+  </h1>
+  <br><br><br><p class="i">3D Robotics</p><h1 class="po">Robotics relies on 3D modeling<br> for designing robots.</h1>
+  </h1>
+  <br><br><br><p class="l">3D Printing</p><h1 class="po">3D printing creates physical<br> objects from digital designs.
+  </h1>
+  <br><br><br><p class="k">3D VR AR</p><h1 class="po">VR and AR rely on 3D for<br> realistic simulations.
+  </h1>
+  <br><br><br><p class="i">CAD 3D</p><h1 class="po">CAD software uses 3D for<br> precise engineering designs.
+  </h1>
+
+<script src="script.js"></script>
 </body>
 </html>
+<style>
+  .i{color: #9312cfcc;
+  }
+  .l{
+    color: rgb(108, 206, 38);
+  }
+  .k{
+    color: #237ac1;
+  }
+  nav{
+    box-shadow: 3px 3px 5px transparent;
+}
+nav ul{
+    width: 100%;
+    list-style:none;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+nav li{
+    height: 50px;
+    
+  
+}
+nav a {
+
+    height: 100%;
+    padding:0 50px;
+    text-decoration: none;
+    display: flex;
+    align-items:center;
+    color: white;
+    font-family:sans-serif;
+    text-decoration: none;
+    
+}
+nav a:hover{
+    font-size: 15;
+color: rgba(255, 230, 0, 0.763);
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar
+{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 400px;
+    z-index: 999;
+background-color:transparent;
+box-shadow: white;
+display:none;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+backdrop-filter: blur(20px);
+}
+  #background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+
+.custom-scrollbar {
+  height: 300px;
+  overflow-y: scroll;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+  p{
+    text-decoration:underline rgba(255, 255, 255, 0.452);
+    font-weight: 1000;
+    color: rgb(20, 198, 218);
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .po{
+    color: rgba(255, 255, 255, 0.345);
+    text-align: center;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .pop{
+    color: red;
+    font-size: 40px;
+    font-weight: 1000;
+    
+  }
+    .button {
+display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  /* Gradient background */
+  background: linear-gradient(to right, #FF512F, #DD2476);
+    }
+    body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+}
+.io{
+    font-size: 50px;
+    color:rgba(255, 255, 255, 0.441);
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.gradient-container {
+  width: 100%;
+  height: 100%;
+
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000px;
+  pointer-events: none; /* Ensure the gradient doesn't interfere with mouse events */
+  background: linear-gradient(-45deg, #000000, #000000, #eb0707, #000000);
+  background-size: 400% 400%; /* Make the gradient larger to see the effect */
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow:auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.card:hover.card-overlay {
+  opacity: 1;
+}
+
+.card-overlay h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-overlay p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 400px) {
+    .io {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .button{
+      display: inline-block;
+    }
+    .po{
+      text-align: center;
+      font-size: 80px;
+    }
+
+}
+@media screen and (min-width: 375px) {
+    .io {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .button{
+      display: inline-block;
+    }
+    .po{
+      text-align: center;
+      font-size: 10px;
+    }
+}
+@media screen and (min-width: 360px) {
+    .io {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .button{
+      display: inline-block;
+    }
+    .po{
+      text-align: center;
+      font-size: 10px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .io {
+        font-size: 56px;
+        text-align: center;
+    }
+    
+    .button{
+      display: inline-block;
+    }
+    .po{
+      text-align: center;
+      font-size: 20px;
+    }
+}
+</style>
+<script>
+        function  showSidebar(){
+           const sidebar = document.querySelector(".sidebar")
+       sidebar.style.display ='flex';
+     }
+        function  hideSidebar(){
+           const sidebar = document.querySelector('.sidebar')
+       sidebar.style.display ='none'
+        }
+        </script>
